@@ -9,6 +9,7 @@
         width: 150px;
         height: 150px;
         border-radius: 150px;
+        display: block;
       }
 
       .search-button{
@@ -17,7 +18,7 @@
         font-size: 20px;
         margin-left: 20px;
         margin-bottom: 60px;
-        vertical-align: top;
+        display: block;
       }
 
       .search2{
@@ -37,19 +38,65 @@
       .linkedin-button{
         height: 24px;
         border-radius: 3px;
-        vertical-align: top;
+        display: block;
+      }
+
+      .first-name{
+        margin-top: 8px;
+        height: 29px;
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: -10px;
+        border-style: solid;
+      }
+
+      .last-name{
+        margin-left: 6px;
+        height: 29px;
+        display: inline-block;
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: -10px;
+        border-style: solid;
+      }
+
+      .email2{
+        display: inline;
+        margin-top: 8px;
+        height: 29px;
+        padding-left: 10px;
+        border-radius: 8px;
+        border-style: solid;
+        padding-right: 200px;
       }
 
 
+      .sign-button{
+        background-color: rgba(5, 67, 182, 0.8);
+        color: white;
+        height: 40px;
+        font-weight: bold;
+        font-size: 16px;
+        padding-left: 150px;
+        padding-right: 180px;
+        margin-top: 10px;
+        display: block;
+        border: none;
+        border-radius: 8px;
+      }
   </style>
 
 </head>
 <body>
-  <img src="thumbnails/Patient 4.jpg" alt="image not found" class="Patient">
   <input type="search" placeholder="Search" class="search-button">                                                                                                                                    
+  <img src="thumbnails/Patient 4.jpg" alt="image not found" class="Patient">
   <input type="search" placeholder="Search Google or type a URL" class="search2">
 
   <h3>Email</h3>
   <input type="text" placeholder="test@gmail.com" class="linkedin-button">
+  <input type="text" placeholder="First name" class="first-name">
+  <input type="text" placeholder="Last name" class="last-name">
+  <input type="text" placeholder="Email" class="email2">
+  <button type="submit"  class="sign-button">Sign Up</button>
 </body>
 </html>
