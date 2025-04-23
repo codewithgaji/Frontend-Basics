@@ -84,6 +84,37 @@
         border: none;
         border-radius: 8px;
       }
+
+      .div-trial{
+        background-color: red;
+        display: inline-block;
+        margin-top: 8px;
+        height: 300px;
+        width: 300px;
+      }
+
+      .second-div{
+        background-color: green;
+        margin-left: 10px;
+        display: inline-block;
+        width: 240px;
+        height: 240px;
+        border-radius: 380px;
+      }
+
+      .service-div{
+        display: block;
+        height: 100px;
+        width: 300px;
+        margin-top: 4px;
+        border: 0.2px;
+        border-style: solid;
+        padding-left: 15px;
+      }
+
+      .satisfied{
+        font-weight: 10px;
+      }
   </style>
 
 </head>
@@ -98,5 +129,18 @@
   <input type="text" placeholder="Last name" class="last-name">
   <input type="text" placeholder="Email" class="email2">
   <button type="submit"  class="sign-button">Sign Up</button>
+
+  <!--proving "<div> is just a container"-->
+  <div class="div-trial"></div>
+  <div class="second-div"></div>
+
+  <div class="service-div">
+    <p class="satisfied">
+      Satisfied with our service?
+    </p>
+
+    <button class="yes">Yes</button>
+    <button class="no">No</button>
+  </div>
 </body>
 </html>
