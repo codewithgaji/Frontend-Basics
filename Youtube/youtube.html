@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Youtube.com Clone</title>
+    <title>Youtube.com Clone </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
     <style>
+
+      p {
+        font-family: Roboto, Arial; /* This is a font stack*/
+      }
+      
       .thumbnail{                                                                                                                                                                       
         width: 300px; /*Width is usually better to manipulate the size of an img */
         display: block;
@@ -15,10 +26,11 @@
         display: block;
       }
 
-      .video-title{
-        width: 300px;
+      .video-title {
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 500;
       }
-
 
       .div-example{
         display: inline-block;
@@ -30,42 +42,84 @@
         vertical-align: top; /* This is to make the images on the same level*/
         margin-right: 15px;
       }
+
+      .channel-picture {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+      }
+      .video-info {
+        display: inline-block;
+        width: 200px;
+      }
+
+      .profile-picture {
+        width: 50px;
+        border-radius: 50px;
+        width: 40px;
+      }
+
+      .thumbnail-row {
+        margin-bottom: 12px;
+      }
     </style>
   </head>
 
   <body>
       <input class="search-bar" type="text" placeholder="Search">
 
+<!--Using the <div> element, we get to break down the container into different parts we want-->
     <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+      </div>
 
-      <p class="video-title">
-        Talking Tech and AI with Google CEO Sundar Pichai!
-      </p>
 
-      <p class="video-author">
-        Marques Brownlee
-      </p>
+      <div>
+        <div class="channel-picture">
+          <img class="profile-picture" src="thumbnails/channel-1.jpeg">
+        </div>
 
-      <p class="video-stats">
-        3.4M views &#183; 6 months ago
-      </p>
+        <div class="video-info">
+          <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+    
+          <p class="video-author">
+            Marques Brownlee
+          </p>
+    
+          <p class="video-stats">
+            3.4M views &#183; 6 months ago
+          </p>
+        </div>
+        
+      </div>
+
+     
   </div>
 
+
+
   <div class="video-preview">
-    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+    <div>
+      <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+    </div>
+    <div>
+      <p class="video-title">
+        Try Not To Laugh Challenge #9    
+      </p>
+  
+      <p class="video-author">
+        Markiplier
+      </p>
+  
+      <p class="video-stats">
+        19M views &#183; 4 years ago
+      </p>
+    </div>
 
-    <p class="video-title">
-      Try Not To Laugh Challenge #9    
-    </p>
-
-    <p class="video-author">
-      Markiplier
-    </p>
-
-    <p class="video-stats">
-      19M views &#183; 4 years ago
-    </p>
+   
 </div>
 
  
