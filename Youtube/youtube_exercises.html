@@ -187,6 +187,57 @@
         padding-left: 16px;
         padding-right: 16px;
   }
+
+  .thumbnail {
+    width: 300px;
+    border-style: solid;
+    border-color: grey;
+    border: 0.3px;
+  }
+
+  .cat-image {
+    width: 250px;
+  }
+
+  .Oliver {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .golden {
+    width: 40px;
+    display: inline-block;
+    border-radius: 20px;
+  }
+
+  .profile-picture {
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  .profile-info{
+    display: inline-block;
+    margin-left: 4px;
+  }
+
+  .profile-text {
+    color: rgb(96, 96, 96);
+    line-height: 4px;
+  }
+
+  .friend-button {
+    background-color: blue;
+    color: white;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-left: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    width: 140px;
+  }
   </style>
 
 </head>
@@ -237,6 +288,44 @@
     <button class="tweet-button">
       Tweet
     </button>    
+  </div>
+
+  <!--Building the cat message with nested layouts-->
+
+  <div class="thumbnail">
+
+    <div class="cat-preview">
+      <img class="cat-image" src="thumbnails/images.jpg" alt="image not found">
+    </div>
+
+    <div class="message-info">
+      <div class="cat-name">
+        <h2 class="Oliver">
+          Oliver
+        </h2>
+      </div>
+      <div class="profile">
+
+        <div class="profile-picture">
+          <img class="golden" src="thumbnails/Golden-Retriever.webp" alt="Image not found">
+        </div>
+        
+        <div class="profile-info">
+          <p class="profile-text">
+            2 mutual friends
+          </p>
+        </div>
+
+        <div class="friend-request">
+          <button class="friend-button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+
   </div>
 
 </body>
