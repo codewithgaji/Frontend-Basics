@@ -1,0 +1,507 @@
+body {
+  padding-top: 70px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: white;
+  display: grid;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: gray;
+  grid-template-columns: 1fr 100px 100px;
+
+}
+
+.dog-profile {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.golden-retriever {
+  display: inline-block;
+  border-radius: 20px;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.golden-name {
+  display: inline-block;
+}
+
+.add-friend {
+  background-color: rgba(5, 67, 182, 0.8);
+  color: white;
+  line-height: 36px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: Mulish, sans-serif;
+  margin-right: 10px;
+}
+
+.message {
+  background-color: rgb(184, 181, 181);
+  color: black;
+  line-height: 36px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+
+.Patient{
+      width: 150px;
+      height: 150px;
+      border-radius: 150px;
+      display: block;
+    }
+.search-button{
+  border-radius: 6px;
+  height: 36px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+  display: block;
+}
+.search2{
+  border: none;
+  height: 36px;
+  border-radius: 10px;
+  padding-right: 40px;
+  padding-left: 6px;
+  opacity: 0.4px;
+  margin-top: 20px;
+}
+.search2:hover{
+  box-shadow: 3px 3px 0.7px grey;
+}
+.linkedin-button{
+  height: 24px;
+  border-radius: 3px;
+  display: block;
+}
+.first-name{
+  margin-top: 8px;
+  height: 29px;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: -10px;
+  border-style: solid;
+}
+.last-name{
+  margin-left: 6px;
+  height: 29px;
+  display: inline-block;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: -10px;
+  border-style: solid;
+}
+.email2{
+  display: inline;
+  margin-top: 8px;
+  height: 29px;
+  padding-left: 10px;
+  border-radius: 8px;
+  border-style: solid;
+  padding-right: 200px;
+}
+.sign-button{
+  background-color: rgba(5, 67, 182, 0.8);
+  color: white;
+  height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 150px;
+  padding-right: 180px;
+  margin-top: 10px;
+  display: block;
+  border: none;
+  border-radius: 8px;
+}
+.div-trial{
+  background-color: red;
+  display: inline-block;
+  margin-top: 8px;
+  height: 300px;
+  width: 300px;
+}
+.second-div{
+  background-color: green;
+  margin-left: 10px;
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  border-radius: 380px;
+}
+.service-div{
+  display: block;
+  height: 100px;
+  width: 300px;
+  margin-top: 4px;
+  border: 0.2px;
+  border-style: solid;
+  padding-left: 15px;
+}
+.satisfied{
+  font-weight: 10px;
+}
+.youtube-div{
+  display: block;
+  height: 100px;
+  width: 295px;
+  margin-top: 4px;
+  border: 0.2px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  background-color: rgb(32, 32, 32);
+}
+.music{
+  font-size: 20px;
+  font-weight: bold;
+  color: White;
+  margin-bottom: 2px;
+}
+.youtube-desc{
+  padding-top: 2px;
+  color: grey;
+  padding-top: 1px;
+}
+.cat-swag-div{
+  height: 100px;
+  width: 500px;
+  border: 0.2px; 
+  display: block; 
+  border-style: solid;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border-color: rgb(66, 66, 66);
+}
+.cat{
+  width: 100px;
+  height: 100px;
+  border-radius: 180px;
+}
+.cat-text{
+  color: rgb(63, 60, 60);
+  font-size: 24px;
+  display: inline-block;
+  height: 20px;
+  vertical-align: top;
+  padding-top: 16px;
+}
+.tweet-button {
+  color: white;
+  background-color: rgb(9, 125, 202);
+  border-radius: 18px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 100px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+  margin-top: 35px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.thumbnail {
+  width: 300px;
+  margin-top: 8px;
+  display: block;
+  border-style: solid;
+  border-color: rgb(96, 96, 96);
+}
+.cat-image {
+  width: 300px;
+}
+.Oliver {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.golden {
+  width: 40px;
+  display: inline-block;
+  border-radius: 20px;
+}
+.profile-picture {
+  vertical-align: top;
+  display: inline-block;
+}
+.profile-info{
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.profile-text {
+    color: rgb(96, 96, 96);
+    line-height: 4px;
+  }
+
+.friend-button {
+    background-color: rgb(37, 156, 235);
+    color: white;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-left: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    width: 140px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+
+.message-info{
+    margin-left: 4px;
+  }
+
+.header-exercise {
+  background-color: rgb(137, 8, 211);
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  box-sizing: border-box;
+  height: 30px;
+  column-gap: 5px;
+  margin-top: 10px;
+}
+
+.left-header,
+.middle-header,
+.right-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
+}
+
+
+.home-header,
+.search-header {
+  display: flex;
+  border: none;
+}
+
+.search-header {
+  border-radius: 10px;
+  height: 20px;
+  max-width: 500px;
+  width: 100%;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.download-header {
+  background-color: transparent;
+  border-color: rgb(241, 238, 238);
+  border-width: 1px;
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: white;
+}
+
+.home-header {
+  color: white;
+  font-weight: 700;
+}
+
+
+/*Practicing Nested Flexbox*/
+.channel {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 500px;
+  height: 210px;
+  margin-top: 15px;
+  align-items: center;
+  border: 1px;
+  background-color: rgb(240, 238, 238);
+  border-style: solid;
+  padding-top: -50px;
+  padding-left: -60px;
+  padding-bottom: -5px;
+}
+
+.content {
+  display: grid;
+  max-width: 580px;
+  height: 150px;
+  margin: 10px;
+  padding: -10px;
+  margin-top: -50px;
+  margin-left: 10px;
+}
+
+.tweet-page {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 60px;
+}
+
+.cat-pic {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+
+.content-tweet {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.channel-name {
+  align-items: center;
+  display: flex;
+  height: 25px;
+}
+
+.supersimple,
+.SuperSimpleDev {
+  display: inline-block;
+  font-weight: 600;
+}
+
+
+.SuperSimpleDev {
+  margin-left: 5px;
+  color: rgb(107, 106, 106);
+}
+
+.tweet {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+
+.link-space {
+  display: grid;
+  column-gap: 0;
+  align-items: center;
+  height: 85px;
+}
+
+.filler {
+  display: flex;
+  background-color: white;
+  max-width: 100px;
+  border: 1.1px;
+  border-style: solid;
+  border-color: rgb(156, 154, 154);
+  height: 82px;
+  padding: 5px;
+  margin-top: -95px;
+  margin-left: 360px;
+  border-radius: 20px;
+}
+
+
+.youtube-filler {
+  display: flex;
+  background-color: rgb(204, 202, 202);
+  max-width: 150px;;
+  height: 82px;  
+  padding-top: 6.4px;
+  padding-bottom: 2px;
+  border: 1.1px;
+  border-style: solid;
+  border-color: rgb(156, 154, 154);
+  max-width: 90px;
+  margin-top: -2px;
+  margin-left: 110px;
+  margin-bottom: 1px;
+  margin-right: -70px;
+  border-radius: 20px;
+}
+
+
+.video-desc {
+  display: grid;
+  background-color: white;
+  border-left-width: 1.1px;
+  border-top-width: 1.1px;
+  border-bottom-width: 1.1px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: rgb(156, 154, 154);
+  height: 80px;
+  max-width: 240px;
+  padding: 5.768px;
+  margin-left: 180px;
+  margin-top: -94px;
+  margin-right: -50px;
+}
+
+.media-app {
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+  height: 30px;
+}
+
+.video-title2 {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  height: 40px;
+}
+
+.youtubelink {
+  color: rgb(143, 142, 142);
+  font-weight: 600;
+}
+
+.backendtitle {
+  font-weight: 600;
+}
+
+
+
+
+/*bottom*/
+.bottom {
+  margin-bottom: 1000px;
+}

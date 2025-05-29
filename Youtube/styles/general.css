@@ -1,9 +1,11 @@
-.p {
+p {
   font-family: Roboto, Arial; /* This is a font stack*/
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.body {
+body {
   margin: 0;
+  padding-top: 80px;
+  padding-left: 80px;
 }

@@ -4,251 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercises</title>
-  <style>
-    .Patient{
-        width: 150px;
-        height: 150px;
-        border-radius: 150px;
-        display: block;
-      }
-
-      .search-button{
-        border-radius: 6px;
-        height: 36px;
-        font-size: 20px;
-        margin-left: 20px;
-        margin-bottom: 60px;
-        display: block;
-      }
-
-      .search2{
-        border: none;
-        height: 36px;
-        border-radius: 10px;
-        padding-right: 40px;
-        padding-left: 6px;
-        opacity: 0.4px;
-        margin-top: 20px;
-      }
-
-      .search2:hover{
-        box-shadow: 3px 3px 0.7px grey;
-      }
-
-      .linkedin-button{
-        height: 24px;
-        border-radius: 3px;
-        display: block;
-      }
-
-      .first-name{
-        margin-top: 8px;
-        height: 29px;
-        border-radius: 8px;
-        padding-left: 10px;
-        padding-right: -10px;
-        border-style: solid;
-      }
-
-      .last-name{
-        margin-left: 6px;
-        height: 29px;
-        display: inline-block;
-        border-radius: 8px;
-        padding-left: 10px;
-        padding-right: -10px;
-        border-style: solid;
-      }
-
-      .email2{
-        display: inline;
-        margin-top: 8px;
-        height: 29px;
-        padding-left: 10px;
-        border-radius: 8px;
-        border-style: solid;
-        padding-right: 200px;
-      }
-
-
-      .sign-button{
-        background-color: rgba(5, 67, 182, 0.8);
-        color: white;
-        height: 40px;
-        font-weight: bold;
-        font-size: 16px;
-        padding-left: 150px;
-        padding-right: 180px;
-        margin-top: 10px;
-        display: block;
-        border: none;
-        border-radius: 8px;
-      }
-
-      .div-trial{
-        background-color: red;
-        display: inline-block;
-        margin-top: 8px;
-        height: 300px;
-        width: 300px;
-      }
-
-      .second-div{
-        background-color: green;
-        margin-left: 10px;
-        display: inline-block;
-        width: 240px;
-        height: 240px;
-        border-radius: 380px;
-      }
-
-      .service-div{
-        display: block;
-        height: 100px;
-        width: 300px;
-        margin-top: 4px;
-        border: 0.2px;
-        border-style: solid;
-        padding-left: 15px;
-      }
-
-      .satisfied{
-        font-weight: 10px;
-      }
-
-      .youtube-div{
-        display: block;
-        height: 100px;
-        width: 295px;
-        margin-top: 4px;
-        border: 0.2px;
-        padding-left: 15px;
-        padding-right: 10px;
-        padding-top: 6px;
-        padding-bottom: 8px;
-        background-color: rgb(32, 32, 32);
-      }
-
-      .music{
-        font-size: 20px;
-        font-weight: bold;
-        color: White;
-        margin-bottom: 2px;
-      }
-      .youtube-desc{
-        padding-top: 2px;
-        color: grey;
-        padding-top: 1px;
-      }
-
-      .cat-swag-div{
-        height: 100px;
-        width: 500px;
-        border: 0.2px; 
-        display: block; 
-        border-style: solid;
-        padding-left: 10px;
-        padding-top: 6px;
-        padding-bottom: 5px;
-        margin-top: 10px;
-        border-radius: 4px;
-        border-color: rgb(66, 66, 66);
-      }
-
-      .cat{
-        width: 100px;
-        height: 100px;
-        border-radius: 180px;
-      }
-
-      .cat-text{
-        color: rgb(63, 60, 60);
-        font-size: 24px;
-        display: inline-block;
-        height: 20px;
-        vertical-align: top;
-        padding-top: 16px;
-      }
-
-      .tweet-button {
-        color: white;
-        background-color: rgb(9, 125, 202);
-        border-radius: 18px;
-        border: none;
-        font-weight: bold;
-        font-size: 15px;
-        cursor: pointer;
-        margin-left: 100px;
-        transition: box-shadow 0.15s;
-        vertical-align: top;
-        margin-top: 35px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        padding-left: 16px;
-        padding-right: 16px;
-  }
-
-  .thumbnail {
-    width: 300px;
-    margin-top: 8px;
-    display: block;
-    border-style: solid;
-    border-color: rgb(96, 96, 96);
-  }
-
-  .cat-image {
-    width: 300px;
-  }
-
-  .Oliver {
-    margin-top: 3px;
-    margin-bottom: 3px;
-  }
-
-  .golden {
-    width: 40px;
-    display: inline-block;
-    border-radius: 20px;
-  }
-
-  .profile-picture {
-    vertical-align: top;
-    display: inline-block;
-  }
-
-  .profile-info{
-    display: inline-block;
-    margin-left: 4px;
-  }
-
-  .profile-text {
-    color: rgb(96, 96, 96);
-    line-height: 4px;
-  }
-
-  .friend-button {
-    background-color: rgb(37, 156, 235);
-    color: white;
-    padding-top: 2px;
-    padding-right: 2px;
-    padding-left: 3px;
-    font-size: 16px;
-    font-weight: bold;
-    height: 40px;
-    border: none;
-    border-radius: 4px;
-    width: 140px;
-    margin-top: 4px;
-    margin-bottom: 6px;
-  }
-
-  .message-info{
-    margin-left: 4px;
-  }
-  </style>
-
+ 
+  <link rel="stylesheet" href="styles/exercises.css">
 </head>
 <body>
+  <div class="header">
+    <div class="dog-profile">
+      <img class="golden-retriever" src="thumbnails/Golden-Retriever.webp" alt="">
+      <h4 class="golden-name">Golden Retriever</h4>
+    </div>
+    <button class="add-friend">
+      Add Friend
+    </button>
+    <button class="message">
+      Message
+    </button>
+  </div>
+
   <input type="search" placeholder="Search" class="search-button">                                                                                                                                    
   <img src="thumbnails/Patient 4.jpg" alt="image not found" class="Patient">
   <input type="search" placeholder="Search Google or type a URL" class="search2">
@@ -330,10 +102,79 @@
         </div>
       </div>
 
+    </div>
+
+  </div>
+
+  <div class="header-exercise">
+    <div class="left-header">
+      <P class="home-header">Home</P>
+
+    </div>
+
+    <div class="middle-header">
+      <input type="text" placeholder="Search" class="search-header">
+
+    </div>
+
+    <div class="right-header">
+      <button class="download-header">
+        Download
+      </button>
+    </div>
+  </div>
+
+
+
+<!--Practicing Nested Flexbox-->
+  <div class="channel">
+    <div class="content">
+      <div class="tweet-page">
+        <div class="profile-pic">
+          <img class="cat-pic" src="thumbnails/images.jpg" alt="">
+        </div>
+
+        <div class="content-tweet">
+
+          <div class="channel-name">
+            <h4 class="supersimple">supersimple.dev</h4>
+            <p class="SuperSimpleDev">@SuperSimpleDev</p>
+          </div>
+
+          <div class="tweet">
+            <h4>What is backend web development? A complete
+              overview. New video is up!
+            </h4>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="link-space">
+          <div class="youtube-filler"> </div>
+          <div class="filler"> </div>
+          <div class="video-desc">
+            <div class="media-app">
+              <p class="youtubelink">youtube.com</p>
+            </div>
+
+            <div class="video-title2">
+              <p class="backendtitle">Backend web development - a complete
+                overview (2021)
+              </p>
+            </div>
+          </div>
+          
+
+      </div>
 
     </div>
 
   </div>
 
+  <div class="bottom">
+
+  </div>
 </body>
 </html>

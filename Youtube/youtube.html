@@ -9,19 +9,38 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
 
   </head>
 
   <body>
 
     <div class="header"> 
-      <div class="left-section">The left section</div>    
+      <div class="left-section">
+        <img class="hamburger-menu" src="Icons/hamburger-menu.svg" alt="">
+        <img class="youtube-logo" src="Icons/youtube-logo.svg" alt="">
+      </div>
+      
 
       <div class="middle-section">
         <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon"  src="Icons/search.svg" alt="">
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="Icons/voice-search-icon.svg" alt="">
+        </button>
       </div>  
       
-      <div class="right-section">The right section</div>                                                                                                                                                                   
+      <div class="right-section">
+        <img class="upload-icon" src="Icons/upload.svg" alt="">
+        <img class="youtube-apps-icon" src="Icons/youtube-apps.svg" alt="">
+        <img class="notifications-icon" src="Icons/notifications.svg" alt="">
+        <img class="current-user-picture" src="thumbnails/my-channel.jpeg" alt="">
+      </div>                                                                                                                                                                   
+    </div>
+    <div class="sidebar">
+      Sidebar
     </div>
     <!--Using the <div> element, we get to break down the container into different parts we want-->
     <div class="video-grid">
@@ -86,7 +105,7 @@
       
       </div>
 
-      <div class="video-preview">
+      <div class="video-preview">                                                                                                                                                                             
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
           </div>
