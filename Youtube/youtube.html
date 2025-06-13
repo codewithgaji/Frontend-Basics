@@ -26,34 +26,92 @@
         <input class="search-bar" type="text" placeholder="Search">
         <button class="search-button">
           <img class="search-icon"  src="Icons/search.svg" alt="">
+          <div class="tool-tip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="Icons/voice-search-icon.svg" alt="">
+          <div class="tool-tip">Search with your voice</div>
         </button>
       </div>  
       
       <div class="right-section">
-        <img class="upload-icon" src="Icons/upload.svg" alt="">
-        <img class="youtube-apps-icon" src="Icons/youtube-apps.svg" alt="">
-        <img class="notifications-icon" src="Icons/notifications.svg" alt="">
-        <img class="current-user-picture" src="thumbnails/my-channel.jpeg" alt="">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="Icons/upload.svg" alt="">
+          <div class="tool-tip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="Icons/youtube-apps.svg" alt="">
+          <div class="tool-tip">YouTube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="Icons/notifications.svg" alt="">
+          <div class="notifications-count">3</div>
+          <div class="tip">Notifications</div>
+        </div>
+        <div class="current-user-picture-container">
+          <img class="current-user-picture" src="thumbnails/my-channel.jpeg" alt="">
+          <div class="tool-tip">Profile</div>
+        </div>
       </div>                                                                                                                                                                   
     </div>
+
     <div class="sidebar">
-      Sidebar
+      <div class="sidebar-link">
+        <img src="Icons/home.svg" alt="">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/explore.svg" alt="">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/subscriptions.svg" alt="">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/originals.svg" alt="">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/youtube-music.svg" alt="">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/library.svg" alt="">
+        <div>Library</div>
+      </div>
     </div>
+
     <!--Using the <div> element, we get to break down the container into different parts we want-->
     <div class="video-grid">
        
       <div class="video-preview">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            <a href="https://youtu.be/n2RNcPRtAiY?si=fjDSnNbT-4mLbnRM">
+              <img class="thumbnail" 
+              src="thumbnails/thumbnail-1.webp">
+            </a>
+            <div class="video-time">14:20</div>
           </div>
 
 
           <div class="video-info-grid">
             <div class="channel-picture">
               <img class="profile-picture" src="thumbnails/channel-1.jpeg">
+              <div class="tool-tip">
+              <div class="profile-view">
+                <img class="profile-picture-view" src="thumbnails/channel-1.jpeg" alt="not found">
+              </div>
+              <div class="info-view">
+                <div class="author-view">
+                 <p class="author">Marques Brownlee</p> 
+                </div>
+                <div class="subscribers-view">
+                  <p class="subscribers">20M subscribers</p> 
+                </div>
+              </div>
+              
+            </div>
             </div>
 
             <div class="video-info">
@@ -71,19 +129,34 @@
             </div>
             
           </div>
-
-        
       </div>
 
 
 
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+          <a href="https://youtu.be/mP0RAo9SKZk?si=hz0XStsrMOhPL48H">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+          </a>
+          <div class="video-time">8:22</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
           <img class="profile-picture" src="thumbnails/channel-2.jpeg" alt="Image not found">
+          <div class="tool-tip">
+              <div class="profile-view">
+                <img class="profile-picture-view" src="thumbnails/channel-2.jpeg" alt="not found">
+              </div>
+              <div class="info-view">
+                <div class="author-view">
+                 <p class="author">Markiplier</p> 
+                </div>
+                <div class="subscribers-view">
+                  <p class="subscribers">37.6M subscribers</p> 
+                </div>
+              </div>
+              
+            </div>
           </div>
 
           <div class="video-info">
@@ -101,19 +174,36 @@
           </div>
         </div>
       
-
-      
       </div>
+
+
 
       <div class="video-preview">                                                                                                                                                                             
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+            <a href="https://youtu.be/FgjPQQeTh1w?si=1qMqEAyc_CuUAWi7">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+            </a>
+            <div class="video-time">9:13</div>
           </div>
 
 
           <div class="video-info-grid">
             <div class="channel-picture">
               <img class="profile-picture" src="thumbnails/channel-3.jpeg">
+              <div class="tool-tip">
+              <div class="profile-view">
+                <img class="profile-picture-view" src="thumbnails/channel-3.jpeg" alt="not found">
+              </div>
+              <div class="info-view">
+                <div class="author-view">
+                 <p class="author">SSSniperWolf</p> 
+                </div>
+                <div class="subscribers-view">
+                  <p class="subscribers">35M subscribers</p> 
+                </div>
+              </div>
+              
+            </div>
             </div>
 
             <div class="video-info">
@@ -132,18 +222,34 @@
             
           </div>
 
-        
       </div>
 
 
 
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+          <a href="https://youtu.be/094y1Z2wpJg?si=0XphfBaiwocVFt3g">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+          </a>
+          <div class="video-time">22:09</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-          <img class="profile-picture" src="thumbnails/channel-4.jpeg" alt="Image not found">
+            <img class="profile-picture" src="thumbnails/channel-4.jpeg" alt="Image not found">
+            <div class="tool-tip">
+              <div class="profile-view">
+                <img class="profile-picture-view" src="thumbnails/channel-4.jpeg" alt="not found">
+              </div>
+              <div class="info-view">
+                <div class="author-view">
+                 <p class="author">Veritasium</p> 
+                </div>
+                <div class="subscribers-view">
+                  <p class="subscribers">18.1M subscribers</p> 
+                </div>
+              </div>
+              
+            </div>
           </div>
 
           <div class="video-info">
@@ -161,19 +267,36 @@
           </div>
         </div>
       
-
-      
       </div>
+
 
       <div class="video-preview">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+            <a href="https://youtu.be/86CQq3pKSUw?si=ziKAecG4k6NPF2Bu">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+            </a>
+            
+            <div class="video-time">11:17</div>
           </div>
 
 
           <div class="video-info-grid">
             <div class="channel-picture">
               <img class="profile-picture" src="thumbnails/channel-5.jpeg">
+              <div class="tool-tip">
+              <div class="profile-view">
+                <img class="profile-picture-view" src="thumbnails/channel-5.jpeg" alt="not found">
+              </div>
+              <div class="info-view">
+                <div class="author-view">
+                 <p class="author">CS Dojo</p> 
+                </div>
+                <div class="subscribers-view">
+                  <p class="subscribers">1.95M subscribers</p> 
+                </div>
+              </div>
+              
+            </div>
             </div>
 
             <div class="video-info">
@@ -192,19 +315,36 @@
             
           </div>
 
-        
       </div>
 
 
 
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+          <a href="https://youtu.be/yXWw0_UfSFg?si=TfZSXOjVWpxYqz55">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+          </a>
+          <div class="video-time">19:59</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-          <img class="profile-picture" src="thumbnails/channel-6.jpeg" alt="Image not found">
+            <img class="profile-picture" src="thumbnails/channel-6.jpeg" alt="Image not found">
+            <div class="tool-tip">
+              <div class="profile-view">
+                <img class="profile-picture-view" src="thumbnails/channel-6.jpeg" alt="not found">
+              </div>
+              <div class="info-view">
+                <div class="author-view">
+                 <p class="author">MrBeast</p> 
+                </div>
+                <div class="subscribers-view">
+                  <p class="subscribers">404M subscribers</p> 
+                </div>
+              </div>
+              
+            </div>
           </div>
+          
 
           <div class="video-info">
           <p class="video-title">

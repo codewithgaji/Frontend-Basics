@@ -1,0 +1,91 @@
+body {
+  height: 3000px;
+}
+
+.close-button {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+
+}
+
+.close {
+  background-color: black;
+  border-radius: 12px;
+  color: white;
+  padding: 6px 8px; 
+}
+
+.box-container {
+  background-color: gray;
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  width: 320px;
+  height: 180px;
+}
+
+.timestamp {
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+}
+
+.time {
+  background-color: black;
+  border-radius: 2px;
+  color: white;
+  padding: 3px 6px;
+  font-size: 15px;
+}
+
+
+.brand-container {
+  background-color: rgb(180, 179, 179);
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 380px;
+  width: 380px;
+}
+
+.top {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  height: 280px;
+  width: 280px;
+  border: none;
+}
+
+.discount-container {
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+
+.discount-price {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Roboto, Arial;
+  padding: 5px 10px 5px 5px;
+}
+
+.cart-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  background-color: rgba(238, 236, 236, 0.5);
+  height: 90px;
+  width: 380px;
+}
+
+.cart-button {
+  padding: 5px;
+  background-color: transparent;
+  font-size: 15px;
+}
