@@ -27,6 +27,26 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
@@ -128,12 +148,9 @@
 
 
 .video-time {
-  font-family: ROboto, Arial;
   font-size: 12px;
   font-weight: 500;
-  padding: 2px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding: 4px;
   border-radius: 2px;
   background-color: black;
   color: white;

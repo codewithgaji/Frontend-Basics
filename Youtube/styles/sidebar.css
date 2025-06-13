@@ -33,6 +33,39 @@
 
 
 .sidebar-link div {
-  font-family: Roboto, Arial;
   font-size: 10px;
+}
+
+@media (min-width: 1200px) {
+
+  body {
+    padding-left: 200px;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 180px;
+  }
+  
+  .sidebar-link {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: -20px;
+  }
+
+  .sidebar-link img {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .sidebar-link div {
+    margin-left: -20px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
 }
