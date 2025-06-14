@@ -1,6 +1,6 @@
 # Frontend Basics
 
-![Project Screenshot](path/to/your-screenshot.png)
+![Project Screenshot](youtube-clone.png)
 
 A repository where I learned and practiced the fundamentals of **HTML** and **CSS**.
 
