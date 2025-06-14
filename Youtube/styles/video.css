@@ -25,18 +25,9 @@
   display: grid;
   column-gap: 18px;
   row-gap: 40px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
-
-
-/* Small phones up to 360px (in CSS‑pixels) */
-@media (min-width: 361px) and (max-width: 740px) {
-  /* two columns for mid‑size phones/tablets */
-  .video-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 @media (min-width: 750px) {
   /* three columns for small desktops */
@@ -173,6 +164,9 @@
   right: 8px;
 
 }
+
+
+
 
 
 
