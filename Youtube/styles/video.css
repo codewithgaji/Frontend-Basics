@@ -20,48 +20,46 @@
 
 /*.video-preview{
    vertical-align: top; This is to make the images on the same level */
-.video-grid {
+/* Mobile‑first default: single column */
+   .video-grid {
   display: grid;
   column-gap: 18px;
   row-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media (max-width: 750px) {
+
+
+/* Small phones up to 360px (in CSS‑pixels) */
+@media (min-width: 361px) and (max-width: 740px) {
+  /* two columns for mid‑size phones/tablets */
   .video-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
-
-@media (min-width: 751px) and (max-width: 999px) {
+@media (min-width: 750px) {
+  /* three columns for small desktops */
   .video-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1000px) {
+  /* Three columns for large desktops */
   .video-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1300px) {
+  /* four columns for large desktops */
+  .video-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 
-/*For Devices*/
-@media screen and (max-width: 360px) {
-  .video-grid {
-    grid-template-columns: 1fr;
-  }
-  
-}
-
-
-@media screen and (min-width: 361px)  and (max-width: 480px) {
-  .video-grid {
-    grid-template-columns: 1fr;
-  }
-  
-}
 
 .video-info-grid {
   display: grid;
@@ -175,3 +173,6 @@
   right: 8px;
 
 }
+
+
+
