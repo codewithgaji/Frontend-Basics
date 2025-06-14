@@ -37,8 +37,8 @@ This repo—**Frontend Basics**—is my learning playground for HTML and CSS. Bu
 ## 📬 Contact
 **Gaji Yaqub Ayomikun**
 
-- GitHub: @codewithgaji
+- GitHub: [here](https://github.com/codewithgaji)
 
-- Twitter: @codewithgaji
+- Twitter: [here](https://x.com/codewithgaji)
 
-- Email: gajiyakub6@gmail.com
+- Email: [here](gajiyakub6@gmail.com)
