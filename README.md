@@ -33,28 +33,6 @@ This repo—**Frontend Basics**—is my learning playground for HTML and CSS. Bu
    - Mobile‑first breakpoints  
    - Styling hover states and tooltips  
 
-5. **Transition to JavaScript**  
-   - Repository structure prepared for adding interactive scripts  
-   - Placeholder folders for future JS exercises and integrations  
-
----
-
-## 🗂 Project Structure
-**Frontend-Basics/**
-- ├── Lesson1/
-- ├── Testouts/
-- ├── YouTube/
-- │ ├── icons/
-- │ ├── styles/
-- │ │ └── video.css
-- │ ├── thumbnails/
-- │ ├── flexbox.html
-- │ ├── grid.html
-- │ ├── position.html
-- │ ├── positionexercise.html
-- │ ├── youtubeexercise.html
-- │ └── index.html ← Main YouTube clone project
-- └── .escode/ ← VSCode configuration
 
 ## 📬 Contact
 **Gaji Yaqub Ayomikun**
@@ -63,4 +41,4 @@ This repo—**Frontend Basics**—is my learning playground for HTML and CSS. Bu
 
 - Twitter: @codewithgaji
 
-- Email: gajiyakub@gmail.com
+- Email: gajiyakub6@gmail.com
