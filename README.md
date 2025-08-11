@@ -1,6 +1,6 @@
-# Frontend Basics
+# [Youtube-Clone](https://lucky-gumption-ac20fd.netlify.app/)
 
-![Project Screenshot](path/to/your-screenshot.png)
+![Project Screenshot](youtube-clone.png)
 
 A repository where I learned and practiced the fundamentals of **HTML** and **CSS**.
 
@@ -33,34 +33,12 @@ This repo—**Frontend Basics**—is my learning playground for HTML and CSS. Bu
    - Mobile‑first breakpoints  
    - Styling hover states and tooltips  
 
-5. **Transition to JavaScript**  
-   - Repository structure prepared for adding interactive scripts  
-   - Placeholder folders for future JS exercises and integrations  
-
----
-
-## 🗂 Project Structure
-**Frontend-Basics/**
-- ├── Lesson1/
-- ├── Testouts/
-- ├── YouTube/
-- │ ├── icons/
-- │ ├── styles/
-- │ │ └── video.css
-- │ ├── thumbnails/
-- │ ├── flexbox.html
-- │ ├── grid.html
-- │ ├── position.html
-- │ ├── positionexercise.html
-- │ ├── youtubeexercise.html
-- │ └── index.html ← Main YouTube clone project
-- └── .escode/ ← VSCode configuration
 
 ## 📬 Contact
 **Gaji Yaqub Ayomikun**
 
-- GitHub: @codewithgaji
+- GitHub: [here](https://github.com/codewithgaji)
 
-- Twitter: @codewithgaji
+- Twitter: [here](https://x.com/codewithgaji)
 
-- Email: gajiyakub@gmail.com
+- Email: [here](gajiyakub6@gmail.com)
