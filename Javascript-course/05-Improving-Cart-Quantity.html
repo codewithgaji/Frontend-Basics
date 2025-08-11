@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Quantity</title>
+
+</head>
+
+<body>
+  <button onclick=" /* Using the console.log() in the onclick attribute*/
+    console.log(`Cart Quantity : ${cartQuantity}`)"> 
+    Show Quantity
+  </button>
+
+
+
+  <button onclick="
+  if (cartQuantity >= 10) {
+      verifier = alert(`Cart is full ${cartQuantity = 10}`)
+      console.log(verifier)
+    }
+
+  else {
+  
+  console.log(`Cart Quantity: ${cartQuantity +=1}`)}">
+    Add to Cart
+  </button>
+
+
+  <button onclick="
+   if (cartQuantity >= 10) {
+      verifier = alert(`Cart is full. Limit Is ${cartQuantity = 10}`)
+      console.log(verifier)
+    }
+
+    else {
+  
+    console.log(`Cart Quantity: ${cartQuantity += 2}`)}
+  
+ ">
+    +2
+  </button>
+
+
+
+  <button onclick="
+  if (cartQuantity >= 10) {
+      verifier = alert(`Cart is full ${cartQuantity = 10}`)
+      console.log(verifier)
+    }
+
+  else {
+  
+  console.log(`Cart Quantity: ${cartQuantity += 3}`)}">
+    +3
+  </button>
+
+
+
+  <button onclick="console.log('Cart was reset.'); 
+  console.log(`Cart Quantity: ${cartQuantity *= 0}`)">
+    Reset Cart
+  </button>
+
+  <button
+  onclick="
+  if (cartQuantity <= 0) {
+    console.log(alert(`Not enough items in the cart ${cartQuantity =0}`))
+  }
+
+  else
+  console.log(`cartQuantity ${cartQuantity -=1}`)">
+    Remove From Cart
+  </button>
+
+  <button
+  onclick="
+  if (cartQuantity <= 0) {
+    console.log(alert(`Not enough items in the cart ${cartQuantity =0}`))
+  }
+
+  else
+  console.log(`cartQuantity ${cartQuantity -=2}`)">
+    -2
+  </button>
+
+  <button
+  onclick="
+  if (cartQuantity <= 0) {
+    console.log(alert(`Not enough items in the cart ${cartQuantity =0}`))
+  }
+
+  else
+  console.log(`cartQuantity ${cartQuantity -=3}`)">
+    -3
+  </button>
+ 
+
+  <script>
+    let cartQuantity = 0;
+    let verifier = 0;
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Flip</title>
+</head>
+<body>
+  <script>
+    //number = Math.floor(Math.random() * 10) // This is to provide the values as integers
+    let number = Math.random();
+
+    
+    let rounded = number.toFixed(1); // To put in 1 decimal place
+    console.log(rounded);
+    
+    // if (rounded < 0.5){
+    //   result = 'Heads';
+    // }
+
+    // else {
+    //   result = 'Tails';
+    // };
+    // console.log(result); 
+
+    // const guess = 'Heads';
+    // if (guess === result){
+    //   console.log('You win')
+    // }
+
+    // else {
+    //   console.log('You lose')
+    // };
+
+    const result =  rounded < 0.5 ? "Heads": "Tails";
+    
+    
+
+    console.log(result);
+    console.log(guess);
+    
+    
+  </script>
+  
+</body>
+</html>

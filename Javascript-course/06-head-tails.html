@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Head or Tails</title>
+</head>
+<body>
+  <script>
+    const randomNumber = Math.random();
+    let result = '';
+    console.log(randomNumber);
+  
+
+    let guess = 'Heads'
+
+
+    if (randomNumber < 0.5){
+    result = 'Heads'
+    console.log(`Computer Guess ${result}`)
+    }
+
+    else {
+      result = 'Tails'
+      console.log(`Computer Guess ${result}`)
+    }
+
+    if (guess === 'Heads' && result ==='Heads') {
+      console.log(`Your Guess ${guess}`)
+      console.log('You win!')
+    }
+
+    else if (guess === 'Tails' && result === 'Tails') {
+      console.log(`Your Guess ${guess}`)
+      console.log('You win')
+    }
+
+    else {
+      console.log(`Your Guess ${guess}`)
+      console.log('You Lose')
+    }
+
+  </script>
+</body>
+</html>

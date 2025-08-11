@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amusement Park</title>
+</head>
+<body>
+
+
+  <script>
+    const name1 = 'Tomi';
+    const name2 = 'Jeff'
+
+    let age = Math.floor(Math.random() *100);
+
+    const isHoliday = true; //A holiday
+    
+
+    if ((age <= 6 || age >= 65) && isHoliday ) { // The && operators requires both args to be true
+      console.log(age)
+      console.log('Discount')
+    }
+
+    else {
+      console.log(age)
+      console.log('No Discount')
+    }
+
+    // else if (age > 6 && age < 65) {
+    //   console.log(age)
+    //   console.log('No Discount')
+    // }
+
+    // else if (age >= 65 && isHoliday){
+    //   console.log(age)
+    //   console.log('Discount')
+    // }
+
+    // else if (age >= 65 && !isHoliday){
+    //   console.log(age)
+    //   console.log('No Discount(Holiday Period)')
+    // }
+
+
+  </script>
+  
+</body>
+</html>
