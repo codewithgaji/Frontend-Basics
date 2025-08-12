@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversions</title>
+</head>
+<body>
+  
+  <script>
+    function convertToFahrenheit(degNum){
+      const fahrenconversion = ((degNum * 9)/5) + 32;
+      return fahrenconversion;
+    }
+
+    function converToCelsius(degfahr){
+      const degreeConversion = ((degfahr - 32)* 5)/9
+      return degreeConversion;
+    };
+
+    function convertTemperatureFahrenheit(cels){
+      temperatureConversionToFahrenheit = `${convertToFahrenheit(cels)}F`
+      return temperatureConversionToFahrenheit;
+    }
+
+    function convertTemperatureDegrees(fahr){
+      temperatureConversionToDegrees = `${converToCelsius(fahr)}C`
+
+      return temperatureConversionToDegrees;
+    }
+
+    console.log(convertToFahrenheit(25));
+    console.log(converToCelsius(86));
+    console.log(convertTemperatureFahrenheit(25));
+    console.log(convertTemperatureDegrees(86));
+  </script>
+</body>
+</html>
