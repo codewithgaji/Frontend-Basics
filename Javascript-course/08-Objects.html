@@ -9,99 +9,124 @@
 
 <body>
  
-<script>
-  // const product = {
-  //   name: 'socks', // These are objects
-  //   price: 1090
-  // };
-  // console.log(typeof product);
+  <script>
+    // const product = {
+    //   name: 'socks', // These are objects
+    //   price: 1090
+    // };
+    // console.log(typeof product);
 
-  // console.log(product.name); // This is to access a property
-  // console.log(product.price);
+    // console.log(product.name); // This is to access a property
+    // console.log(product.price);
 
-  // product.name = 'Cotton Socks'; // This changes the value associated to the property 'name'
+    // product.name = 'Cotton Socks'; // This changes the value associated to the property 'name'
 
-  // console.log(product);
-  // product.newProperty = true;
-  // console.log(product)
-  // delete product.newProperty;
-  // console.log(product);
+    // console.log(product);
+    // product.newProperty = true;
+    // console.log(product)
+    // delete product.newProperty;
+    // console.log(product);
 
-  // We can save any type of values in an object
-//   const product2 = {
-//     name: 'shirt',
-//     'delivery-time': '1 Day',
-//     rating: { // This is a 'nested object'
-//       stars: 4.5,
-//       count: 87
-//     },
-//     fun: function function1(){
-//       console.log("Function inside object")
-//     } // This is actually referred to as a 'method'
-    
-//     // We can use brackets '[]' for strings value-pair and may not use it as well.
-//   };
+    // We can save any type of values in an object
+    //   const product2 = {
+    //     name: 'shirt',
+    //     'delivery-time': '1 Day',
+    //     rating: { // This is a 'nested object'
+    //       stars: 4.5,
+    //       count: 87
+    //     },
+    //     fun: function function1(){
+    //       console.log("Function inside object")
+    //     } // This is actually referred to as a 'method'
+        
+    //     // We can use brackets '[]' for strings value-pair and may not use it as well.
+    //   };
 
-//   // CONSOLE.LOG is actually a method
-//   console.log(product2);
-//   console.log(product2.name);
-//   console.log(product2['name']);
-//   console.log(product2['delivery-time']);
-//   console.log(product2.rating.stars)
-//   product2.fun(); // We call a function inside objects as a function as well
+    //   // CONSOLE.LOG is actually a method
+    //   console.log(product2);
+    //   console.log(product2.name);
+    //   console.log(product2['name']);
+    //   console.log(product2['delivery-time']);
+    //   console.log(product2.rating.stars)
+    //   product2.fun(); // We call a function inside objects as a function as well
 
-//   console.log(typeof console) // This is an object/method
-//   console.log(typeof console.log)// This is a function
+    //   console.log(typeof console) // This is an object/method
+    //   console.log(typeof console.log)// This is a function
 
-//   // MATH is also a 'method' and '.random' is a 'function' saved inside the object(method)
+    //   // MATH is also a 'method' and '.random' is a 'function' saved inside the object(method)
 
-//     // JSON
-//    // 'stringify' is a function saved in the object(JSON)
-//   console.log(JSON.stringify(product2))  // This converts the object into json
-  
-//   // JSON does not support functions
-//  const jsonString = JSON.stringify(product2) // To save as Json
+    //     // JSON
+    //    // 'stringify' is a function saved in the object(JSON)
+    //   console.log(JSON.stringify(product2))  // This converts the object into json
+      
+    //   // JSON does not support functions
+    //  const jsonString = JSON.stringify(product2) // To save as Json
 
-//   console.log(JSON.parse(jsonString)) // To convert json to js objects
+    //   console.log(JSON.parse(jsonString)) // To convert json to js objects
 
-//   // LOCAL STORAGE
+    //   // LOCAL STORAGE
 
-console.log('hello'.length) // 'length' tells us the length of the string. 'length is a property'
+    console.log('hello'.length) // 'length' tells us the length of the string. 'length is a property'
 
-console.log('hello'.toUpperCase());
+    console.log('hello'.toUpperCase());
 
-// OBJECTS ARE REFERENCES
-const object1 = {
-  message: 'hello' // This is not stored in 'object1' but actually stored somewhere in the system memory
-}
+    // OBJECTS ARE REFERENCES
+    const object1 = {
+      message: 'hello' // This is not stored in 'object1' but actually stored somewhere in the system memory
+    }
 
-const object2 = object1; // COPY BY REFERENCE. So 'object2' is also pointing to the same reference of 'object1'
+    const object2 = object1; // COPY BY REFERENCE. So 'object2' is also pointing to the same reference of 'object1'
 
-console.log(object2)
-object1.message  = 'Good Job!';
+    console.log(object2)
+    object1.message  = 'Good Job!';
 
-console.log(object1)// You will notice that we were able to change the value of 'object1' even though we used 'const' and that's because it is only a REFERENCE
-
-
-
-const object3 = {
-  message: 'Good job!'
-}
-
-console.log(object3 === object1) // We can't compare variables in objects directly.In this case we are comparing their references and they are DIFFERENT
+    console.log(object1)// You will notice that we were able to change the value of 'object1' even though we used 'const' and that's because it is only a REFERENCE
 
 
-const object4 = {
-  message: 'Good job!'
-};
 
-// const message = object4.message; - Same thing with the one below
+    const object3 = {
+      message: 'Good job!'
+    }
+
+    console.log(object3 === object1) // We can't compare variables in objects directly.In this case we are comparing their references and they are DIFFERENT
 
 
-const {message} = object4; // This is called destructuring. It is when you take the property value of the object and save it in the 'message' variable
-console.log(object1 === object2);
-console.log(message)
-</script>
+    const object4 = {
+      message: 'Good job!',
+      price: 799
+    };
+
+    // const message = object4.message; - Same thing with the one below
+
+
+    const {message, price} = object4; // This is called DESTRUCTURING. 
+    // It is when you take the property value of the object and save it in the 'message' variable or the number of variables declare in the curly braces
+
+
+
+    console.log(object1 === object2);
+    console.log(message);
+    console.log(price);
+
+
+      // SHORTHAND PROPERTY
+
+    const object5 = {
+      // message: message
+      message,
+      // method: function function1(){
+      //   console.log('method')
+      // },
+      method(){// SHORTHAND method
+        console.log('method')
+      }
+    }
+
+    console.log(object5)
+    object5.method();
+
+
+  </script>
 </body>
 </html>
 

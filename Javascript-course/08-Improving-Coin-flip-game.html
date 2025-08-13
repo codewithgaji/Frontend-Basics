@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Head or Tails</title>
+</head>
+<body>
+  <button onclick="
+    playgame('Heads');
+">
+    Heads
+  </button>
+
+  <button onclick="
+  playgame('Tails');
+">
+    Tails
+  </button>
+
+  <button onclick="total()">
+    Result
+  </button>
+  <script>
+    const randomNumber = Math.random();
+    let result = '';
+    let score = JSON.parse(localStorage.getItem('score')) || {
+      Wins: 0,
+      Losses: 0
+    };
+    
+    console.log(randomNumber);
+    
+  
+
+
+    function computerMove(){
+      if (randomNumber < 0.5){
+      result = 'Heads'
+      console.log(`Computer Guess ${result}`)
+      }
+
+      else {
+        result = 'Tails'
+        console.log(`Computer Guess ${result}`)
+      }
+      return result;
+    }
+    
+
+    function playgame(guess){
+      if (guess === 'Heads' && result ==='Heads') {
+      score.Wins += 1;
+      console.log(`Your Guess ${guess}`)
+      console.log(computerMove());
+      console.log('You win!')
+      console.log(score)
+
+    }
+
+    else if (guess === 'Tails' && result === 'Tails') {
+      score.Wins += 1;
+      console.log(`Your Guess ${guess}`)
+      console.log(computerMove());
+      console.log('You win');
+      console.log(score)
+
+    }
+
+    else {
+      score.Losses += 1;
+      console.log(`Your Guess ${guess}`)
+      console.log(computerMove());
+      console.log('You Lose')
+      console.log(score)
+
+    }
+      localStorage.setItem('score', JSON.stringify(score))
+      return guess;
+    }
+
+    function total(){
+      alert(`This is the Total Score: Wins: ${score.Wins}, Losses: ${score.Losses}`)
+    }
+
+
+  
+  </script>
+</body>
+</html>

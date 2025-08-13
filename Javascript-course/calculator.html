@@ -46,14 +46,44 @@
 
 
 
-      <button onclick="console.log(eval(calculation))">=</button>
+      <button onclick="
+      saveResult(eval(calculation))
+      ">=</button>
 
-      <button onclick="console.log('Calculation was reset'), console.log(`Calculation ${calculation = ''}`)">Reset</button>
+      <button onclick="
+      console.log('Calculation was reset'), console.log(`Calculation ${calculation = 0}`)
+
+      localStorage.setItem('calculator', calculation=0)
+      ">Reset</button>
+
+      <button onclick="result();">
+        Result
+      </button>
     </ul>
   </p>
 
   <script>
-    let calculation = ""
+    
+    let calculation = localStorage.getItem('calculator') || "";
+
+    
+    function saveResult(value){
+      console.log(value);
+      localStorage.setItem('calculator', value)
+      
+    }
+
+    let value= localStorage.getItem('calculator') || 0;
+
+    console.log(`Previous value: ${value}`)
+  
+
+    
+
+    function result(){
+      alert(`This is the calculation:  ${localStorage.getItem('calculator')}`)
+    }
+    
 
   </script>
 </body>
