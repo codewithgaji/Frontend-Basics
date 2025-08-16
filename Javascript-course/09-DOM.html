@@ -10,12 +10,69 @@
     Hello
   </button>
 
+  <button class="js-button">
+    Second button
+  </button>
+
+  <p>Amazon Shipping Calculator</p>
+
+  <!-- This tells us what key we are pressing -->
+  <input placeholder="Cost or order" class="js-cost-input" onkeydown="handleCostKeydown(event);"> 
+
+  <button 
+  onclick="calculateTotal()"
+ >Calulate</button>
+
+  <p class="js-total-cost">
+
+  </p>
+
   <script>
+
+    onsole.log(String(25)) // This converts values to strings
+
+    console.log('25' - 5); // Js will automatically do math
+
+    console.log('25' + 5) // Addition doesn't work the same way, instead it will do TYPE COERCION(concatenation)
+    
+
+
+    window.document
+    window.console.log('window')
+
+    function calculateTotal(){
+      const inputElement = document.querySelector('.js-cost-input');
+
+      let cost = Number(inputElement.value);
+
+      if(cost < 40 ){
+        cost += 10;
+        console.log(cost)
+      }
+
+      document.querySelector('.js-total-cost')
+      .innerHTML = `Cost $${cost}`
+    }
+
+
+    function handleCostKeydown(event){
+      if (event.key ==='Enter'){
+        calculateTotal();
+      }
+    }
+
+    
+
 
     // querySelector allows us to pick an element from the Html and put it in Js
     console.log(document.querySelector('button').innerHTML) 
 
-    document.querySelector('button').innerHTML = 'Changed'
+    document.querySelector('button')
+      .innerHTML = 'Changed' // For readability we can seperate the 'innerHTML' and ensure you use 'tab' so we know it's a continuation
+
+    const buttonElement = document.querySelector('.js-button');
+
+    console.log(buttonElement)
 
     //document.body.innerHTML = 'hello'; // Changes the entire HTML body
     //document.title = 'Good Job'; // Document object is linked to the 'webpage'

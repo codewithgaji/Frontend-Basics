@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Projects</title>
+</head>
+<body>
+  <p>Youtube Subscribe Button</p>
+  <button onclick="subscribe();
+  " class="js-subscribe">
+    Subscribe</button>
+
+
+
+  <script>
+    function subscribe(){
+      const buttonElement = document.querySelector('.js-subscribe')
+
+      if (buttonElement.innerText === 'Subscribe') { // InnerText makes checking spaces not needed
+        buttonElement.innerHTML = 'Subscribed'
+      }
+
+      else {
+        buttonElement.innerHTML = 'Subscribe'
+      }
+
+        }
+    
+  </script>
+</body>
+</html>
