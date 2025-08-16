@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    body {
+        font-family: Arial;
+      }
+
+    .subscribe-button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 35px;
+      }
+
+      .is-subscribed {
+        background-color:rgb(240, 240, 240);
+        color: black;
+      }
+
+      .cost-input {
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      .calculate-button {
+        padding: 12px 15px;
+        font-size: 15px;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        border: none;
+      }
+
+      
+  </style>
+</head>
+<body>
+  <button>
+    Hello
+  </button>
+
+  <button class="js-button">
+    Second button
+  </button>
+
+  <p>Youtube Subscribe Button</p>
+  <button onclick="subscribe();
+  " class="js-subscribe subscribe-button ">
+    Subscribe</button>
+
+  <p>Amazon Shipping Calculator</p>
+  <p>
+    Orders under $40 += $10 shippping
+  </p>
+  <p>
+    Orders over $40 = FREE shippping
+  </p>
+
+   <!-- This tells us what key we are pressing -->
+  <input placeholder="Cost or order" class="js-cost-input cost-input" onkeydown="handleCostKeydown(event);"> 
+
+  <button 
+  onclick="calculateTotal()" class="calculate-button"
+ >Calulate</button>
+
+  <p class="js-total-cost">
+
+  </p>
+
+
+  <p>Rock Paper Scissors</p>
+  <a href="./10-Rock-paper-scissors-with-css.html"><p>Click here</p></a>
+  
+
+ 
+
+  <script>
+
+    console.log(String(25)) // This converts values to strings
+
+    console.log('25' - 5); // Js will automatically do math
+
+    console.log('25' + 5) // Addition doesn't work the same way, instead it will do TYPE COERCION(concatenation)
+    
+
+
+    // WINDOW - all of these are a part of the window
+    window.alert
+    window.document
+    window.console.log('window');
+
+    function calculateTotal(){
+      const inputElement = document.querySelector('.js-cost-input');
+
+      let cost = Number(inputElement.value);
+
+      if(cost < 40 ){
+        cost += 10;
+        console.log(cost)
+      }
+
+      document.querySelector('.js-total-cost')
+      .innerHTML = `Cost $${cost}`
+    }
+
+
+    function handleCostKeydown(event){
+      if (event.key ==='Enter'){
+        calculateTotal();
+      }
+    }
+
+    function subscribe(){
+      const buttonElement = document.querySelector('.js-subscribe')
+
+      if (buttonElement.innerText === 'Subscribe') { // InnerText makes checking spaces not needed
+        buttonElement.innerHTML = 'Subscribed';
+        buttonElement.classList.add('is-subscribed');
+
+      }
+
+      else {
+        buttonElement.innerHTML = 'Subscribe'
+        buttonElement.classList.remove('is-subscribed')
+      }
+
+        }
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // querySelector allows us to pick an element from the Html and put it in Js
+    console.log(document.querySelector('button').innerHTML) 
+
+    document.querySelector('button')
+      .innerHTML = 'Changed' // For readability we can seperate the 'innerHTML' and ensure you use 'tab' so we know it's a continuation
+
+    const buttonElement = document.querySelector('.js-button');
+
+    console.log(buttonElement)
+
+    
+  </script>
+</body>
+</html>

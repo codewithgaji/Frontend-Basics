@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 9A</title>
+</head>
+<body>
+  <button class= "js-9a" onclick="">
+    9A
+  </button>
+
+  <button class="js-9b">
+    9b
+  </button>
+
+  <button class="js-heads" onclick="choice('heads')">
+    Heads
+  </button>
+
+  <button class="js-tails" onclick="choice('tails')">
+    Tails
+  </button>
+
+  <p class="js-choice">
+
+  </p>
+
+
+  <input type="text" class="js-input" onkeydown="inputValue();" placeholder="Your Name?">
+
+
+  <button class="js-submitButton" onclick="
+  let name = document.querySelector('.js-input').value
+  document.querySelector('.js-yourName').innerHTML = `Your name is: ${name}`">
+    Submit
+  </button>
+
+  <p class="js-yourName">
+
+  </p>
+
+  <script>
+    console.log(document.querySelector('.js-9a').innerHTML)
+
+    document.querySelector('.js-9b')
+    .innerHTML = '9b done!'
+
+    function choice(value){
+      if (value === 'heads') {
+        document.querySelector('.js-choice').innerHTML = 'You chose: heads'
+      }
+
+      
+
+      else {
+        document.querySelector('.js-choice').innerHTML = 'You chose: tails'
+      }
+    }
+
+    function inputValue(){
+      let Name = document.querySelector('.js-input').value
+
+      
+
+      if (event.key === 'Enter') {
+        document.querySelector('.js-yourName').innerHTML = `Your name is ${Name}`
+      }
+    }
+  </script>
+</body>
+</html>

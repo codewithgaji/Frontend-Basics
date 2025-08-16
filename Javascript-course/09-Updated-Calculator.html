@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<body>
+  <p>
+    <ul>
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '1'}`">1</button>
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '2'}`" >2</button>
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '3'}`" >3</button>
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '4'}`" >4</button>
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '5'}`" >5</button>
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '6'}`" >6</button>
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '7'}`" >7</button>
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '8'}`" >8</button>
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '9'}`" >9</button>
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML = `Calculate: ${calculation += '0'}`" >0</button>
+
+
+
+      <button onclick="
+      document.querySelector('.js-calculationDisplay').innerHTML= `Calculate: ${calculation += '+'}`">+</button>
+
+
+      <button onclick= "document.querySelector('.js-calculationDisplay').innerHTML= `Calculate: ${calculation += '-'}`">-</button>
+
+      <button onclick= "document.querySelector('.js-calculationDisplay').innerHTML= `Calculate: ${calculation += '*'}`">*</button>
+
+      <button onclick= "document.querySelector('.js-calculationDisplay').innerHTML= `Calculate: ${calculation += '/'}`">/</button>
+
+
+      <button  onclick="saveResult(eval(calculation));">
+      =</button>
+
+      <button 
+     onclick= "document.querySelector('.js-calculationDisplay').innerHTML= `Calculation was reset: ${calculation = 0};`
+
+      localStorage.setItem('calculator', calculation=0)
+      ">Reset</button>
+
+      <button onclick=" document.querySelector('.js-calculationDisplay').innerHTML = `This is the Result: ${eval(calculation)}`">
+        Result
+      </button>
+
+      <p class="js-calculationDisplay">
+
+      </p>
+    </ul>
+  </p>
+
+  <script>
+    
+    let calculation = localStorage.getItem('calculator') || "";
+
+    previousResult();
+    
+    function saveResult(value){
+      document.querySelector('.js-calculationDisplay').innerHTML= `Result: ${value}`
+
+      localStorage.setItem('calculator', value)
+      
+    }
+  
+    function previousResult(){
+      document.querySelector('.js-calculationDisplay').innerHTML = `This is the previous result: ${calculation}`
+    }
+  
+
+  </script>
+</body>
+</html>

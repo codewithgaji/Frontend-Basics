@@ -27,9 +27,15 @@
 
   </p>
 
+  <input type="text" class="js-typeDirectly" onkeyup="livetext()">
+
+  <p class="js-updatedText" >
+
+  </p>
+
   <script>
 
-    onsole.log(String(25)) // This converts values to strings
+    console.log(String(25)) // This converts values to strings
 
     console.log('25' - 5); // Js will automatically do math
 
@@ -53,15 +59,22 @@
       }
 
       document.querySelector('.js-total-cost')
-      .innerHTML = `Cost $${cost}`
+      .innerHTML = `Cost $${cost.toFixed(2)}` // We use 'toFixed()' to set decimal places in Js
     }
-
 
     function handleCostKeydown(event){
       if (event.key ==='Enter'){
         calculateTotal();
       }
     }
+
+
+    function livetext(){
+      const liveText = document.querySelector('.js-typeDirectly').value
+
+      document.querySelector('.js-updatedText').innerHTML = liveText
+    }
+    
 
     
 
@@ -76,20 +89,7 @@
 
     console.log(buttonElement)
 
-    //document.body.innerHTML = 'hello'; // Changes the entire HTML body
-    //document.title = 'Good Job'; // Document object is linked to the 'webpage'
-
-    // PROPERTIES and METHODS
-
-    // console.log(document.title); // Shows 'DOM' in console
-
-    // document.title = 'Changed';
-    // console.log(document.body)
-    // console.log(typeof document.body)// This makes the HTML a javascript object
-
-    // console.log(document.body.innerHTML);
-    // document.body.innerHTML = '<button>Good Job!</button>';
-
+   
     
   </script>
 </body>

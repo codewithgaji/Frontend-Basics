@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Quantity</title>
+
+</head>
+
+<body>
+  <button onclick="
+    document.querySelector('.js-displayQuantity').innerHTML = `This is the Cart Quantity : ${cartQuantity}`"> 
+    Show Quantity
+  </button>
+
+  
+
+  <button onclick="
+  document.querySelector('.js-addToCart').innerHTML = `Cart Quantity: ${cartQuantity +=1}`">
+    Add to Cart
+  </button>
+
+  <button onclick="
+  document.querySelector('.js-addToCart').innerHTML = `Cart Quantity: ${cartQuantity +=2}`">
+    +2
+  </button>
+  <button onclick="
+  document.querySelector('.js-addToCart').innerHTML = `Cart Quantity: ${cartQuantity +=3}`">
+    +3
+  </button>
+
+  <button onclick="
+  document.querySelector('.js-addToCart').innerHTML = `Cart was reset: ${cartQuantity *= 0}`">
+    Reset Cart
+  </button>
+
+  <button onclick="
+  document.querySelector('.js-addToCart').innerHTML = `Cart Quantity: ${cartQuantity -=1}`">
+    Remove from cart
+  </button>
+
+  <button onclick="
+  document.querySelector('.js-addToCart').innerHTML = `Cart Quantity: ${cartQuantity -=2}`">
+    -2
+  </button>
+
+  <button onclick="
+  document.querySelector('.js-addToCart').innerHTML = `Cart Quantity: ${cartQuantity -=3}`">
+    -3
+  </button>
+ 
+  <p class="js-displayQuantity">
+
+  </p>
+
+  <p class="js-addToCart">
+
+  </p>
+
+  <script>
+    let cartQuantity = 0;
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
