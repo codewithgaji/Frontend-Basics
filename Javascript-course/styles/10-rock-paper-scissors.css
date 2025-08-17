@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(26, 25, 25);
+}
+
+.game-name {
+  font-size: 35px;
+  color: white;
+}
+
+.rock-button, .scissors-button, .paper-button{
+  border: 3px solid white;
+  background-color: transparent;
+  border-radius: 80px;
+  width: 120px;
+  height: 120px;
+  font-size: 50px;
+  padding: 20px;
+}
+
+  .playerResult{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  }
+
+.results {
+  color: white;
+  font-size: 15px;
+}
+
+.score {
+  color: white;
+  font-size: 20px;
+}
+
+.emoji {
+  font-size: 40px;
+}
+
+.reset{
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
