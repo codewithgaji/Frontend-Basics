@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays and Loops</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  
+
+  <script>
+    /* // ARRAYS
+    const myArray = [10, 20, 30];// This is an array
+    console.log(myArray);
+    console.log(myArray[0]) // To get the values using indexes
+    myArray[0] = 100; // Changing the values in an array
+    console.log(myArray)
+    const myArray2 = [1, 'hello', true, {name: 'socks'}, [1, 2]]// Arrays in Js are able to save more than one data type in the list, and they can as well save arrays in arrays
+
+    console.log(typeof [1, 2]) // Arrays are seen as objects in js.
+
+    console.log(Array.isArray([1, 2]))// To check if an object is an array, we use "Array.isArray()"
+
+    console.log(myArray.length);
+    myArray.push(100) // This adds '100' to the 'end' of the array
+    console.log(myArray)
+    myArray.splice(0, 2) // This is used to remove values from an array and the two values provided are '(0, 2)' The index where the values would be removed and the number of values to remove at that index stage
+    console.log(myArray);
+    */
+
+
+    // LOOPS - They allow us to keep running a code over and over until a condition is met.
+
+
+    /*let i = 1; // The loop variable
+
+    while (i <= 5) {  // While Loop
+      console.log(i);
+      i += 1 // This will make 'i' to be eventually greater than 5
+    }
+    
+
+    for (let i = 1; i <=5; i ++){
+      console.log(i)
+    }
+
+    // A Non standard loop
+    let randomNumber = 0;
+    while (randomNumber < 0.5){
+      randomNumber = Math.random();
+      console.log(randomNumber);
+    }*/
+
+    const todoList = [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+    ];
+
+
+    // LOOPING THROUGH AN ARRAY
+    /*for (let i = 0; i < todoList.length - 1; i+= 1){
+      const value = todoList[i]// This takes whatever the index variable is and access it.
+      console.log(value)
+    }*/
+
+    // Accumulator Patter
+    const nums = [1, 2, 3];
+    let total = 0;
+    for (let i = 0; i < nums.length; i += 1){
+      const num = nums[i]
+       total += num
+      console.log(total)
+    }
+
+    const numsDoubled = []
+    for (let i = 0; i < nums.length; i += 1){
+      const num = nums[i]
+      numsDoubled.push(num*2)
+      console.log(numsDoubled)
+    }
+
+
+    
+
+  </script>
+</body>
+</html>
