@@ -1,0 +1,50 @@
+body{
+  font-family: Arial;
+}
+
+.name-input, .date-input, .addbutton{
+  padding: 10px;
+}
+
+.addbutton{
+  background-color: rgb(8, 189, 8);
+  color: white;
+  padding: 12px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.practice{
+  font-size: 20px;
+}
+
+/* .name{
+  margin-right: 50px;
+  margin-left: 5px;
+}
+
+.dueDate {
+  margin-left: 60px;
+  margin-right: 50px;
+} */
+
+
+
+.todogrid, .todo-input-grid {
+  display: grid;
+  margin-bottom: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.deleteButton {
+  padding: 12px;
+  background-color: rgb(199, 2, 2);
+  border: none;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+}

@@ -13,20 +13,20 @@ function renderTodoList(){
 
   for (let i = 0; i<todoList.length; i += 1){
     const todoObject = todoList[i];
-    const name = todoObject.name;
-    const dueDate = todoObject.dueDate;
+    // const name = todoObject.name;
+    // const dueDate = todoObject.dueDate;
+    const {name, dueDate} = todoObject
     // THIS GENERATES THE HTML
     const html = //This ${i, 1} is to delete the index and remove just one value
-      `<p>
-        ${name} ${dueDate}
-        <button onClick="
-        todoList.splice(${i}, 1); 
+      `<div>${name}</div>
+        <div>${dueDate}</div>
+          <button class="deleteButton" onClick="
+          todoList.splice(${i}, 1); 
         renderTodoList();
         "> Delete </button> 
-      </p>`
+      </div>`
     todoListHTML += html
   }
-  console.log(todoListHTML)
 
   document.querySelector('.js-todolist')
     .innerHTML = todoListHTML
@@ -36,11 +36,15 @@ function renderTodoList(){
 
 function addTodo(){
   const inputElement = document.querySelector('.js-name-input')
+  const dateInputElement = document.querySelector('.js-due-date-input');
+  const dueDate = dateInputElement.value
   const name = inputElement.value
 
-  todoList.push(name)
+  todoList.push({
+    name,
+    dueDate
+  })
   document.querySelector('.js-todolist').innerHTML = name
-  console.log(todoList)
 
   inputElement.value = '' // This resets the textbox
   renderTodoList();
