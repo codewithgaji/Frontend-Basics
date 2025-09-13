@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises</title>
+</head>
+<body>
+  <button class="js-startbutton">
+    Start
+  </button>
+
+  <script>
+    let isplaying = false;
+    let button = document.querySelector('.js-startbutton');
+
+    button.addEventListener('click', function(){
+      const buttonElement = document.querySelector('.js-startbutton');
+      buttonElement.innerHTML = 'Loading...'
+
+      setTimeout(function changeValue(){
+          if (!isplaying && buttonElement.innerText === 'Loading...'){
+            buttonElement.innerHTML = 'Finished';
+            isplaying = true;
+          }
+
+          else if(isplaying && buttonElement.innerHTML === 'Loading...'){
+          buttonElement.innerHTML = 'Start';
+          isplaying = false;
+          }
+        }, 1000)
+    }
+    )
+
+    
+  </script>
+</body>
+</html>

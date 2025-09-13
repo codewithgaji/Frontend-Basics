@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add To Cart</title>
+</head>
+<body>
+  <button class="js-addtocart" onclick="cartAdded()">Add to Cart</button>
+  <p class="js-added"></p>
+
+
+
+
+  <script>
+    let addedButton = document.querySelector('.js-added');
+
+    const cartButton = document.querySelector('.js-addtocart')
+
+    let timeoutID; // Here we are initializing timeoutID as a global variable, it holds no value here
+
+    
+
+    function add(){
+      addedButton.innerHTML = 'Added';
+      clearTimeout(timeoutID)// When this is called the first time, nothing happens because timeoutID is actually 'undefined' here.
+
+      // But then right after do we assign an ID to it, then if we recall, the 'clearTimeout' cancels the previous operation and 'timeoutID' or time, is re-assigned.
+      timeoutID = setTimeout(remove, 2000)
+    }
+
+    function remove(){
+      addedButton.innerHTML = '';
+    }
+
+    function cartAdded(){
+      setTimeout(add, 500)
+    }
+
+
+  </script>
+</body>
+</html>

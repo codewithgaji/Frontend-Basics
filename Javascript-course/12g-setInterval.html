@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="js-page-title">New messages</title>
+</head>
+<body>
+  
+
+
+  <script>
+    let pageTitle = document.querySelector('.js-page-title')
+    let i = 0;
+    let intervalID;
+    
+
+    function changePageTitle(){
+      i += 1;
+      pageTitle.innerHTML = `(${i}) New messages`
+      if (i === 10){
+        pageTitle.innerHTML = `(${i}) New messages`
+        clearInterval(intervalID)
+      }
+      
+    }
+
+
+    intervalID = setInterval(changePageTitle, 1000)
+
+  </script>
+</body>
+</html>

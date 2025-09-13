@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="js-page-title">New messages</title>
+</head>
+<body>
+  
+  <button onclick="add()">
+    Add
+  </button>
+  <button onclick="remove()">
+    Remove
+  </button>
+
+  <script>
+    let pageTitle = document.querySelector('.js-page-title')
+    let messages = 5;
+
+    function add(){
+      messages += 1;
+      changePageTitle()
+    }
+
+    function remove(){
+      messages -= 1;
+      changePageTitle();
+    }
+    
+
+
+    function changePageTitle(){
+      if (messages > 0){
+      pageTitle.innerHTML = `(${messages}) New messages`
+      }
+      else if (messages === 0){
+        pageTitle.innerHTML = `App`
+      }
+      
+    }
+
+
+  changePageTitle();
+
+  </script>
+</body>
+</html>

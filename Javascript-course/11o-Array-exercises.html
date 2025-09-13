@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Exercises</title>
+</head>
+<body>
+  <div class="js-array">
+
+  </div>
+
+  <script>
+    /*const arrayStrings = ['Tobi', 'John', 'Rick', 'Davis', 'search', 'hello', 'world', 'search', 'dog', 'search']
+    document.querySelector('.js-array').innerHTML = arrayStrings
+    let array = '';*/
+
+    /*for (let i = 0; i <= arrayStrings.length -1; i+=1){
+      const arrayReceived = arrayStrings[i];
+      if (arrayReceived === 'search'){
+        console.log(i)
+        break;
+      }
+      // else {
+      //   console.log(-1)
+      // }
+    }*/
+
+    function findIndex(array, word){
+      for (let i = 0; i <= array.length -1; i+=1){
+        const arrayReceived= array[i];
+        if (arrayReceived === word){
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    console.log(findIndex(['Tobi', 'John', 'Rick', 'Davis', 'search', 'hello', 'world', 'search', 'dog', 'search'], 'search'));
+
+
+
+
+
+    function removeEgg(foods){
+      let noFoodEggs = []
+      let skipcount = 0;
+      const foodreverse = foods.slice().reverse();
+      for (let i = 0; i<=foods.length -1; i +=1){
+        const foodGotten = foodreverse[i];
+        if (foodGotten === 'eggs' && skipcount < 2){
+          skipcount +=1;
+          continue;
+        }
+        
+        noFoodEggs.push(foodGotten)
+      }
+      return noFoodEggs;
+    }
+    console.log(removeEgg(['chicken', 'rice', 'eba', 'eggs', 'fish', 'donuts', 'eggs', 'beans', 'bread', 'eggs']));
+
+
+
+
+
+    numbers = [1, 2, 2, 3, 4, 5, 2, 6, 7, 8, 8, 4, 7, 9, 2, 4, 2, 5]
+
+    let skipcount = 0;
+    let result = []
+
+    for (let i = 0; i<=numbers.length -1; i+= 1){
+      let numbersSaved = []
+      const no2Numbers = numbers[i]
+      if (no2Numbers === 2 && skipcount < 2){
+        skipcount += 1;
+        continue;
+      }
+      result.push(no2Numbers);
+    }
+    console.log(result);
+
+   
+  </script>
+</body>
+</html>

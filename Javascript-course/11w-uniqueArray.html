@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Array</title>
+</head>
+<body>
+  
+
+  <script>
+
+    // THIS RIGHT HERE FILTERS THE ARRAY USING the '.includes()' function and checks if a value already exists or not and then adds it.
+    function uniqueValues(array){
+      let result = [];
+      for (let i = 0; i<array.length-1; i++){
+        const item = array[i]
+        if (!result.includes(item)){
+          result.push(item)
+        }
+      }
+      console.log(result)
+    }
+
+    uniqueValues(['Tobi', 'John', 'Rick', 'Davis', 'Rick', 'Donald', 'World', 'dog','search', 'hello', 'world', 'search', 'dog', 'search'])
+  </script>
+</body>
+</html>
+    

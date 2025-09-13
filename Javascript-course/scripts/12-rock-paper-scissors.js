@@ -119,6 +119,64 @@ function reset(){
   updateScoreElement();
 }
 
+let isAutoPlaying = false;
+let intervalId;
+
+// const autoplay = () => {
+
+// }
+
+function autoplay(){
+  if (!isAutoPlaying)// This checks if the auto play is off and flips it using '!'
+  {
+     intervalId = setInterval(() => {
+    const playerMove = pickComputerMove() // To generate a playerMove automatically we can use the 'pickComputerMove' that generates a random move for the computer AS the playermove as well.
+    playgame(playerMove); // So now we can play the game
+  }, 1000);
+
+  isAutoPlaying = true; // This now tells us that because we confirmed it was off to begin with, and we set the interval, now it is on.
+  }
 
 
+  // Okay so what happens is that when we now click the button again and call the function, what we are doing is checking if 'isAutoPlaying' is still off, if it is the interval will still run, but because it has been flipped to 'true' this tells it that it has changed and so the else statement runs 
 
+  else {
+    clearInterval(intervalId)
+    isAutoPlaying = false;
+  }
+  
+}
+
+
+document.querySelector('.js-rock-button').addEventListener('click', ()=> {
+  playgame('✊');
+})
+
+document.querySelector('.js-paper-button').addEventListener('click', ()=> {
+  playgame('✋');
+})
+
+
+document.querySelector('.js-scissors-button').addEventListener('click', ()=> {
+  playgame('✌️');
+})
+
+
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === 'r'){
+    playgame('✊');
+  }
+
+  else if(event.key === 'p'){
+    playgame('✋');
+  }
+
+  else if(event.key === 's'){
+    playgame('✌️');
+  }
+
+  else {
+    console.log(`${event.key} does not perform any action in the game`)
+  }
+  console.log('Keydown')
+})

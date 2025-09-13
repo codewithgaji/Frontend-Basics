@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatgpt challenge</title>
+</head>
+<body>
+  <h1>Countdown</h1>
+
+  <h3 class="js-timer"></h3>
+  <p class="js-display"></p>
+
+  
+
+  <script>
+    let timerCountdown = document.querySelector('.js-timer')
+    let display = document.querySelector('.js-display')
+    let i = 10;
+    let intervalID;
+
+
+    function timer(){
+
+       
+      timerCountdown.innerHTML = `Countdown: ${i}`
+      i --; // Post-increment - show first then decrement
+
+      if (i === 0){ // We are not using 'if(i === 0)' because that will skip the antecedent value like 1 and not display it and immediately jumps to the condition.
+
+        display.innerHTML = "Time's up!"
+        timerCountdown.innerHTML = `Countdown ${i}`
+        clearInterval(intervalID)
+      }
+    }
+
+    intervalID = setInterval(timer, 1000)
+
+  </script>
+</body>
+</html>
