@@ -132,6 +132,7 @@ function autoplay(){
      intervalId = setInterval(() => {
     const playerMove = pickComputerMove() // To generate a playerMove automatically we can use the 'pickComputerMove' that generates a random move for the computer AS the playermove as well.
     playgame(playerMove); // So now we can play the game
+    document.querySelector('.js-auto-play-button').innerHTML = "Stop Auto Play"
   }, 1000);
 
   isAutoPlaying = true; // This now tells us that because we confirmed it was off to begin with, and we set the interval, now it is on.
@@ -142,6 +143,7 @@ function autoplay(){
 
   else {
     clearInterval(intervalId)
+    document.querySelector('.js-auto-play-button').innerHTML = "Auto Play"
     isAutoPlaying = false;
   }
   
@@ -175,8 +177,44 @@ document.body.addEventListener('keydown', (event) => {
     playgame('✌️');
   }
 
+  else if (event.key === 'a'){
+    autoplay();
+    console.log("Key pressed runs and stops autoplay")
+  }
+
+  else if (event.key === 'Backspace'){
+    confirmation()
+    console.log("Game wants to be reset with 'Backspace' key")
+  }
+
   else {
     console.log(`${event.key} does not perform any action in the game`)
   }
   console.log('Keydown')
 })
+
+document.querySelector('.js-auto-play-button').addEventListener('click', autoplay);
+
+
+document.querySelector('.js-reset').addEventListener('click', confirmation)
+
+
+
+function confirmation () {
+    document.querySelector('.js-confirmation-message').innerHTML = `Are you sure you want to reset the score? <button class="js-yes yes">Yes</button> <button class="js-no no">No</button>
+    ` 
+    let yes = document.querySelector('.js-yes')
+    let no = document.querySelector('.js-no')
+
+    yes.addEventListener('click', () => {
+      document.querySelector('.js-confirmation-message').innerText = '';
+      reset()
+    });
+
+    no.addEventListener('click', () => {
+      document.querySelector('.js-confirmation-message').innerText = "Game Continues...."
+      setTimeout(() => {document.querySelector('.js-confirmation-message').innerText = ''}, 1000)
+    })
+
+
+}

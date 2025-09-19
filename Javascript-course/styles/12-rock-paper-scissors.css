@@ -37,11 +37,17 @@ body {
   font-size: 40px;
 }
 
-.reset, .auto-play-button{
+.reset, .auto-play-button, .yes, .no{
   background-color: white;
   border: none;
   font-size: 15px;
   padding: 8px 15px;
   cursor: pointer;
+}
+
+.confirmation-message {
+  font-weight: bold;
+  color: white;
+  font: 400;
 }
 

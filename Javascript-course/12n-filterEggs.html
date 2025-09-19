@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter</title>
+</head>
+<body>
+  
+
+  <script>
+    let foodArray = ['Yam', 'Eggs', 'Rice', 'Beans', 'Potatoe', 'Bread', 'Eggs', 'Fish', 'Eggs', 'Meat', 'Sweet', 'Jollof', 'Eggs']
+    let eggRemoved = []
+    let eggCount = 0;
+
+    removeEgg = (food) => {
+      eggRemoved = food.filter((value) => {
+        if (value === "Eggs"){
+          if (eggCount < 2){
+            eggCount ++;
+            return false
+          }
+        }
+        return true
+      })
+      return eggRemoved
+    }
+    console.log(foodArray)
+    console.log(removeEgg(foodArray))
+  </script>
+</body>
+</html>

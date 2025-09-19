@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Function</title>
+</head>
+<body>
+  
+  <script>
+    let total = 0;
+    mulitiply = (first_value, second_value) => first_value* second_value
+    
+    console.log(mulitiply(5, 7));
+
+    let count = 0;
+    
+    let array1 = [1, 2, 3, -5, 7, -3, -1, 6, 8, 9]
+
+    countPositive = (array) => {
+      array.forEach((value, index) => {
+        if (value > 0){
+          count ++;
+        }
+      });
+      return count;
+    }
+
+    console.log(countPositive(array1));
+  </script>
+</body>
+</html>

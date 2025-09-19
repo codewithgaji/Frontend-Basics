@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Attributes</title>
+</head>
+<body>
+  
+
+  <script>
+    let array1 = [6, 5, 4, 3, 2, 1]
+    let mappedValues = [];
+
+    // Whenever you are working with 'map' func you might want to create an empy array variable to save the values of the mapped function.
+    addNum = (array, num) => {
+      mappedValues = array.map((value) => value + num)
+      return mappedValues
+    }
+
+    console.log(array1)
+    console.log(addNum(array1, 4))
+  </script>
+</body>
+</html>

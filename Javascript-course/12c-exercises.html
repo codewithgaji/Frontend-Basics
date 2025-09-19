@@ -14,11 +14,11 @@
     let isplaying = false;
     let button = document.querySelector('.js-startbutton');
 
-    button.addEventListener('click', function(){
+    button.addEventListener('click', () => {
       const buttonElement = document.querySelector('.js-startbutton');
       buttonElement.innerHTML = 'Loading...'
 
-      setTimeout(function changeValue(){
+      setTimeout(changeValue = () => {
           if (!isplaying && buttonElement.innerText === 'Loading...'){
             buttonElement.innerHTML = 'Finished';
             isplaying = true;
